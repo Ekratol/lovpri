@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Na lovu - Školní kvízy</title>
+    <link rel="stylesheet" href="styl.css">
+    <style>
+        .menu-container {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-top: 40px;
+        }
+        .menu-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        .menu-btn {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: block;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        .menu-btn:hover {
+            filter: brightness(1.2);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,74,217,0.4);
+        }
+        .menu-btn.trida-6 { background-color: #2ecc71; } /* Zelená */
+        .menu-btn.trida-7 { background-color: #3498db; } /* Modrá */
+        .menu-btn.trida-8 { background-color: #9b59b6; } /* Fialová */
+        .menu-btn.trida-9 { background-color: #e67e22; } /* Oranžová */
+        
+        .menu-btn.trida-6:hover { box-shadow: 0 6px 12px rgba(46,204,113,0.4); }
+        .menu-btn.trida-7:hover { box-shadow: 0 6px 12px rgba(52,152,219,0.4); }
+        .menu-btn.trida-8:hover { box-shadow: 0 6px 12px rgba(155,89,182,0.4); }
+        .menu-btn.trida-9:hover { box-shadow: 0 6px 12px rgba(230,126,34,0.4); }
+    </style>
+</head>
+<body>
+    <h1>Na lovu: Školní Kvízy</h1>
+    
+    <div class="menu-container">
+        <h2 style="color: var(--gold); margin: 0 0 10px 0;">Rozcestník tříd</h2>
+        <p style="color: #888; font-size: 0.95rem; margin-bottom: 20px;">Vyberte ročník, pro který chcete spustit hru:</p>
+        
+        <div class="menu-grid">
+            <!-- Tlačítka odkazují na vaše herní soubory index6.html až index9.html -->
+            <a href="index6.html" class="menu-btn trida-6">6. Třída</a>
+            <a href="index7.html" class="menu-btn trida-7">7. Třída</a>
+            <a href="index8.html" class="menu-btn trida-8">8. Třída</a>
+            <a href="index9.html" class="menu-btn trida-9">9. Třída</a>
+        </div>
+    </div>
+</body>
+</html>
